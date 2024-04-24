@@ -2,7 +2,7 @@
 
 * Студент: [Marianna](https://up.htmlacademy.ru/adaptive/31/user/2089669).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/id85590).
-* Проект: [Кэт энерджи](crystalgoose.github.io/2089669-cat-energy-31/).
+* Проект: [Кэт энерджи](https://crystalgoose.github.io/2089669-cat-energy-31/).
 
 ---
 
