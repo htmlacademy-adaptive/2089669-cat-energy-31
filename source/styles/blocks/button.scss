@@ -1,0 +1,15 @@
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--accent-light, #ffffff);
+  background-color: var(--accent-color, #68b738);
+  border-style: none;
+}
+
+.button--secondary {
+  background-color: #f2f2f2;
+  color: var(--primary-text-color, #444444);
+}

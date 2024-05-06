@@ -1,0 +1,15 @@
+.address-container {
+  //
+}
+
+.address-container__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--secondary-text-color, #000000);
+}
+
+.address-container__address {
+  font-style: normal;
+}

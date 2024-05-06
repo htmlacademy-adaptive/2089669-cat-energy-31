@@ -1,0 +1,28 @@
+.navigation {
+  //
+}
+
+.navigation__button-toggle {
+  //
+}
+
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__item {
+  //
+}
+
+.navigation__item--current {
+  //
+}
+
+.navigation__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--secondary-text-color, #000000);
+}
