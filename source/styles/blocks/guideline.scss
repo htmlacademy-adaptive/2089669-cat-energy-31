@@ -3,37 +3,96 @@
 }
 
 .guideline__container {
-  //
+  padding: 0 20px 49px;
 }
 
 .guideline__title {
-  //
+  margin: 0 0 40px;
 }
 
 .guideline__list {
   list-style: none;
+  margin: 0;
+  padding-left: 80px;
 }
 
 .guideline__item {
-  //
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.guideline__item:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 .guideline__description {
-  //
+  margin: 0;
 }
 
 .guideline__description--nutricion {
-  //
+  position: relative;
+}
+
+.guideline__description--nutricion::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon_leaf");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--accent-color, #68b738);
+  width: 60px;
+  height: 60px;
+  left: -80px;
 }
 
 .guideline__description--powder {
-  //
+  position: relative;
+}
+
+.guideline__description--powder::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon_boil");
+  background-size: 26px 29px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--accent-color, #68b738);
+  width: 60px;
+  height: 60px;
+  left: -80px;
 }
 
 .guideline__description--meal {
-  //
+  position: relative;
+}
+
+.guideline__description--meal::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon_meal");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--accent-color, #68b738);
+  width: 60px;
+  height: 60px;
+  left: -80px;
 }
 
 .guideline__description--changes {
-  //
+  position: relative;
+}
+
+.guideline__description--changes::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon_weights");
+  background-size: 26px 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--accent-color, #68b738);
+  width: 60px;
+  height: 60px;
+  left: -80px;
 }

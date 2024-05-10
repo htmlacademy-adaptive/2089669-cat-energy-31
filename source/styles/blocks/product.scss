@@ -3,20 +3,43 @@
 }
 
 .product__container {
-  //
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 480px;
+}
+
+.product__hero {
+  background-image: url("../../images/hero_background-mobile@1x.webp");
+  background-repeat: no-repeat;
+  background-color: var(--accent-color, #68b738);
+  background-size: 100% auto, cover;
+  max-height: 302px;
+  margin-bottom: 138px;
 }
 
 .product__title {
-  //
+  padding: 27px 20px 25px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .product__slogan {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
+  margin: 0 auto;
+  margin-bottom: 29px;
+}
+
+.product__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .product__button {
-  //
+  margin: 0 auto;
 }

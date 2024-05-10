@@ -45,13 +45,16 @@
   <main class="main-container">
     <section class="product">
       <div class="product__container">
-        <h1 class="product__title title title--light-version">Функциональное питание для котов</h1>
-        <p class="product__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/product_image-tablet@1x.png 1x, images/product_image-tablet@2x.png 2x">
-          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/product_image-tablet@1x.png 1x, images/product_image-tablet@2x.png 2x">
-          <img class="product__image" src="images/product_image-mobile@1x.png" srcset="images/product_image-mobile@2x.png 2x" alt="Баночка корма Кэт Энерджи со вкусом курицы." width="280" height="270">
-        </picture>
+        <div class="product__hero">
+          <h1 class="product__title title title--light-version">Функциональное питание для&nbsp;котов</h1>
+          <p class="product__slogan">Занялся собой? Займись котом!</p>
+          <picture>
+            <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/product_image-tablet@1x.png 1x, images/product_image-tablet@2x.png 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/product_image-tablet@1x.png 1x, images/product_image-tablet@2x.png 2x">
+            <img class="product__image" src="images/product_image-mobile@1x.png" srcset="images/product_image-mobile@2x.png 2x" alt="Баночка корма Кэт Энерджи со вкусом курицы." width="280" height="270">
+          </picture>
+        </div>
+
         <a class="product__button button" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -116,6 +119,9 @@
         <!-- Слайдер -->
         <div class="example__slider slider">
           <div class="slider__container">
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Сравнить фото котика до и после</span>
+            </button>
             <picture>
               <source media="(min-width: 768px)" type="image/png" srcset="images/cat_fat-tablet@1x.png 1x, images/cat_fat-tablet@2x.png 2x" width="560" height="512">
               <img class="slider__cat slider__cat--fat" src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" alt="Сравнение кота до и после программы: до — толстый котик." width="280" height="256">
@@ -135,7 +141,7 @@
       <section class="footer__address">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="footer__address-container address-container">
-          <p class="address-container__subtitle">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="address-container__subtitle">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="address-container__address">ул. Большая Конюшенная, д. 19/8
             <br>Санкт-Петербург
           </address>
@@ -150,7 +156,7 @@
 
       <div class="footer__container">
         <a class="footer__container-logo logo-text" href="index.html" aria-current="page">
-          <img src="images/logo_text-mobile.svg" width="101" height="18" alt="Текстовый логотип Кэт Энерджи.">
+          <img class="logo-text__image" src="images/logo_text-mobile.svg" width="128" height="24" alt="Текстовый логотип Кэт Энерджи.">
         </a>
 
         <section class="footer__socials socials">
@@ -170,7 +176,7 @@
 
         <a class="footer__developer developer-logo" href="https://htmlacademy.ru/">
           <span class="developer-logo__text">HTML academy</span>
-          <span class="visually-hidden">Логотип компании-разработчика</span>
+          <p class="developer-logo__image"><span class="visually-hidden">Логотип компании-разработчика</span></p>
         </a>
       </div>
     </div>

@@ -7,9 +7,12 @@
   color: var(--accent-light, #ffffff);
   background-color: var(--accent-color, #68b738);
   border-style: none;
+  padding: 10px 20px;
 }
 
 .button--secondary {
   background-color: #f2f2f2;
   color: var(--primary-text-color, #444444);
+  padding: 10px 20px;
+  width: 100%;
 }

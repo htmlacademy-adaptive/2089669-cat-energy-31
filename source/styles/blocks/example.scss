@@ -1,13 +1,13 @@
 .example {
-  //
+  background-color: var(--background-secondary, #eaeaea);
 }
 
 .example__container {
-  //
+  padding: 25px 20px 49px;
 }
 
 .example__title {
-  //
+  margin: 0 0 40px;
 }
 
 .example__description {
@@ -15,7 +15,9 @@
 }
 
 .example__stats {
-  //
+  display: flex;
+  justify-content: space-around;
+  margin: 35px 0;
 }
 
 .example__days {
@@ -32,11 +34,15 @@
   line-height: 1;
   text-transform: uppercase;
   color: var(--secondary-text-color, #000000);
+  margin: 0 0 8px;
+  text-align: center;
 }
 
 .example__content {
   font-size: 12px;
   line-height: 1;
+  margin: 0;
+  text-align: center;
 }
 
 .example__expenses {
@@ -44,7 +50,9 @@
   font-size: 14px;
   line-height: 1.4;
   text-transform: uppercase;
+  text-align: center;
   color: var(--secondary-text-color, #000000);
+  margin: 0 0 20px;
 }
 
 .example__expenses-price {

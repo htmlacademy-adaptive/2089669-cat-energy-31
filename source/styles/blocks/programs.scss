@@ -4,30 +4,94 @@
 
 .programs__list {
   list-style: none;
-}
-
-.programs__item {
-  //
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .programs__item--slim {
-  //
+  padding: 30px 20px 18px;
+  background-color: var(--background-basic, #f2f2f2);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.programs__item--slim::before {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color, #68b738);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 24px;
+}
+
+.programs__item--slim::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 36px;
+  height: 50px;
+  background-image: url("../../icons/stack.svg#icon_cat-slim");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 21px;
+  left: 27px;
 }
 
 .programs__item--pro {
-  //
+  padding: 30px 20px 18px;
+  background-color: var(--background-basic, #f2f2f2);
+  position: relative;
+}
+
+.programs__item--pro::before {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color, #68b738);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 24px;
+}
+
+.programs__item--pro::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-image: url("../../icons/stack.svg#icon_cat-pro");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 67px;
+  height: 28px;
+  top: 35px;
+  left: 13px;
 }
 
 .programs__title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
+  font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
   color: var(--secondary-text-color, #000000);
+  margin: 0 0 29px 70px;
 }
 
 .programs__description {
-  //
+  margin: 0 0 38px;
+  padding-right: 13px;
+  position: relative;
+}
+
+.programs__description::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 240px;
+  height: 1px;
+  background-color: #d9d9d9;
+  bottom: -23px;
+  left: 0;
 }
 
 .programs__link {
@@ -37,4 +101,17 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--secondary-text-color, #000000);
+  position: relative;
+}
+
+.programs__link::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 12px;
+  mask-image: url("../../icons/stack.svg#icon_arrow");
+  background-color: var(--secondary-text-color, #000000);
+  right: -35px;
+  top: 6px;
 }

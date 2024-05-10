@@ -7,4 +7,27 @@
   font-size: 16px;
   line-height: 1.25;
   text-decoration: none;
+  text-align: left;
+  position: relative;
+  margin: auto 0;
+}
+
+.developer-logo__image {
+  width: 27px;
+  height: 34px;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.developer-logo__image::before {
+  content: "";
+  width: 25px;
+  height: 32px;
+  mask-image: url("../../icons/stack.svg#icon_html-academy");
+  background-color: var(--accent-dark, #666666);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  position: absolute;
 }

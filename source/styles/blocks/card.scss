@@ -1,9 +1,13 @@
 .card {
-  //
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 1px 0 0 #e6e6e6;
+  padding: 20px 20px 25px;
 }
 
 .card__image {
-  //
+  display: block;
 }
 
 .card__title {
@@ -12,10 +16,19 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: var(--catalog-text-color, #222222);
+  margin: 0 0 14px;
 }
 
 .card__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   font-size: 12px;
+  width: 140px;
+  margin: 0;
+}
+
+.card__content {
+  //
 }
 
 .card__info-content {
@@ -27,5 +40,6 @@
 }
 
 .card__button {
-  //
+  margin-top: 17px;
+  width: 100%;
 }

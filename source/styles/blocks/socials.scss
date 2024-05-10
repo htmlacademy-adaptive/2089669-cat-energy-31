@@ -4,6 +4,10 @@
 
 .socials__list {
   list-style: none;
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
 }
 
 .socials__item {
@@ -14,14 +18,26 @@
   //
 }
 
+.socials__link::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  mask-image: var(--icon);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: var(--accent-dark, #666666);
+  width: 28px;
+  height: 22px;
+}
+
 .socials__link--vkontakte {
-  //
+  --icon: url("../../icons/stack.svg#icon_vkontakte");
 }
 
 .socials__link--youtube {
-  //
+  --icon: url("../../icons/stack.svg#icon_youtube");
 }
 
 .socials__link--telegram {
-  //
+  --icon: url("../../icons/stack.svg#icon_telegram");
 }

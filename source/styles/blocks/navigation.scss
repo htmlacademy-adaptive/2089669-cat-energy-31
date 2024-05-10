@@ -3,11 +3,19 @@
 }
 
 .navigation__button-toggle {
-  //
+  border-style: none;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/stack.svg#icon_menu");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navigation__list {
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .navigation__item {

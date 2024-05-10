@@ -8,8 +8,11 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: var(--secondary-text-color, #000000);
+  width: 140px;
+  margin: 0;
 }
 
 .address-container__address {
   font-style: normal;
+  width: 140px;
 }

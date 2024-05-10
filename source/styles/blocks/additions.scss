@@ -1,5 +1,10 @@
 .additions {
-  //
+  padding: 25px 20px 0;
+}
+
+.additions__title {
+  margin-bottom: 49px;
+  margin-top: 0;
 }
 
 .additions__subtitle {
@@ -8,22 +13,40 @@
   line-height: 1;
   text-transform: uppercase;
   color: var(--catalog-text-color, #222222);
+  margin: 0 0 13px;
 }
 
 .additions__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .additions__item {
-  //
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0 19px;
+  border-top: solid 1px #e6e6e6;
+}
+
+.additions__item:nth-last-child(1) {
+  border-bottom: solid 1px #e6e6e6;
 }
 
 .additions__info {
-  //
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .additions__info-value {
-  //
+  padding: 0;
+  margin: 0;
+}
+
+.additions__info-price {
+  padding: 0;
 }
 
 .additions__button {

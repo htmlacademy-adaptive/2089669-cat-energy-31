@@ -1,20 +1,23 @@
 .subscribe {
-  //
+  padding: 40px 20px;
 }
 
 .subscribe__wrapper {
-  //
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe__title {
-  //
+  margin-bottom: 32px;
 }
 
 .subscribe__subtitle {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
   color: var(--secondary-text-color, #000000);
+  margin-bottom: 32px;
 }
 
 .subscribe__form {

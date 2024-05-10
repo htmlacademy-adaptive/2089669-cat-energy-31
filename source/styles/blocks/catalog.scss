@@ -7,19 +7,20 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: var(--catalog-title-color, #111111);
+  padding: 0 20px;
+  margin-bottom: 41px;
 }
 
 .catalog__subtitle {
   font-size: 12px;
+  text-align: center;
+  margin: 0 0 21px;
 }
 
 .catalog__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog__item {
@@ -27,7 +28,32 @@
 }
 
 .catalog__card-more {
-  //
+  padding: 25px 20px;
+  box-shadow: 0 1px 0 0 #e6e6e6;
+}
+
+.catalog__title-more {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--catalog-title-color, #111111);
+  margin: 0 0 8px;
+}
+
+.catalog__title-more::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../icons/stack.svg#icon_plus");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 23px;
+  padding: 0 20px;
 }
 
 .catalog__button {
