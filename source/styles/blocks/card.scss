@@ -1,9 +1,57 @@
 .card {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
+  width: 320px;
   justify-content: center;
   box-shadow: 0 1px 0 0 #e6e6e6;
   padding: 20px 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 0 auto;
+    padding: 0 37px 40px;
+    box-shadow: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: var(--background-basic, #e2e2e2);
+      width: 100%;
+      height: 430px;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 511px;
+    box-shadow: none;
+  }
+}
+
+.card--more {
+  padding: 25px 20px;
+  box-shadow: 0 1px 0 0 #e6e6e6;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    box-shadow: none;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    box-shadow: 0 0 2px #e6e6e6;
+    max-height: 431px;
+    align-self: end;
+  }
 }
 
 .card__image {
@@ -11,12 +59,21 @@
 }
 
 .card__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $second-font;
   font-size: 16px;
   line-height: 1.25;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--catalog-text-color, #222222);
   margin: 0 0 14px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 41px 0 20px;
+    margin-bottom: 0;
+  }
 }
 
 .card__info {
@@ -25,10 +82,21 @@
   font-size: 12px;
   width: 140px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .card__content {
-  //
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    grid-template-rows: 109px 28px 28px 28px;
+    display: grid;
+  }
 }
 
 .card__info-content {
@@ -36,10 +104,13 @@
 }
 
 .card__info-value {
-  //
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .card__button {
   margin-top: 17px;
   width: 100%;
+  align-self: flex-end;
 }

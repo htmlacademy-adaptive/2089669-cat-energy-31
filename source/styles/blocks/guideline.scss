@@ -4,6 +4,14 @@
 
 .guideline__container {
   padding: 0 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 106px 0 110px;
+  }
 }
 
 .guideline__title {
@@ -14,11 +22,37 @@
   list-style: none;
   margin: 0;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 73px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 73px;
+  }
 }
 
 .guideline__item {
   margin-bottom: 20px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 160px 0 63px;
+    width: 250px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 151px 0 57px;
+    width: 250px;
+    flex-grow: 1;
+  }
 }
 
 .guideline__item:nth-last-child(1) {
@@ -27,6 +61,10 @@
 
 .guideline__description {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .guideline__description--nutricion {
@@ -44,6 +82,14 @@
   width: 60px;
   height: 60px;
   left: -80px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    bottom: 80px;
+    width: 80px;
+    height: 80px;
+    background-size: 25px 28px;
+  }
 }
 
 .guideline__description--powder {
@@ -61,6 +107,14 @@
   width: 60px;
   height: 60px;
   left: -80px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    bottom: 80px;
+    width: 80px;
+    height: 80px;
+    background-size: 25px 28px;
+  }
 }
 
 .guideline__description--meal {
@@ -78,6 +132,14 @@
   width: 60px;
   height: 60px;
   left: -80px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    bottom: 80px;
+    width: 80px;
+    height: 80px;
+    background-size: 25px 28px;
+  }
 }
 
 .guideline__description--changes {
@@ -95,4 +157,12 @@
   width: 60px;
   height: 60px;
   left: -80px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    bottom: 80px;
+    width: 80px;
+    height: 80px;
+    background-size: 25px 28px;
+  }
 }

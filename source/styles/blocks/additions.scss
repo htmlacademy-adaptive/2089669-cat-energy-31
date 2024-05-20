@@ -1,19 +1,52 @@
 .additions {
   padding: 25px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 74px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 110px 0;
+    display: grid;
+    grid-template-columns: 896px 1fr;
+    column-gap: 80px;
+  }
 }
 
 .additions__title {
   margin-bottom: 49px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px; //title-small сделать переменную//
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px; //title-small сделать переменную//
+    line-height: 1;
+    grid-column: 1/-1;
+  }
 }
 
 .additions__subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: $second-font;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
   color: var(--catalog-text-color, #222222);
   margin: 0 0 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .additions__list {
@@ -27,10 +60,33 @@
   flex-direction: column;
   padding: 13px 0 19px;
   border-top: solid 1px #e6e6e6;
-}
 
-.additions__item:nth-last-child(1) {
-  border-bottom: solid 1px #e6e6e6;
+  &:nth-last-child(1) {
+    border-bottom: solid 1px #e6e6e6;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 26px 38px 28px;
+    border: solid 1px #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 325px 325px 245px;
+    grid-template-rows: 73px;
+    align-items: center;
+    padding: 0;
+    border-top: solid 1px #e6e6e6;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+
+    &:nth-last-child(1) {
+      border-bottom: solid 1px #e6e6e6;
+    }
+  }
 }
 
 .additions__info {
@@ -38,6 +94,15 @@
   justify-content: space-between;
   margin: 0;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 245px 80px;
+  }
 }
 
 .additions__info-value {
@@ -47,12 +112,25 @@
 
 .additions__info-price {
   padding: 0;
+  margin-left: 20px;
 }
 
 .additions__button {
-  //
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -2/-1;
+    height: 40px;
+  }
 }
 
 .additions__gift {
-  //
+  margin: 0 auto;
+  margin-top: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }

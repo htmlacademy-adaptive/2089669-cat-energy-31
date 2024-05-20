@@ -1,9 +1,19 @@
 .form {
-  //
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+    margin: 0 auto;
+  }
 }
 
 .form__input {
-  font-family: "Oswald", sans-serif;
+  font-family: $second-font;
   font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
@@ -15,9 +25,13 @@
   border-width: 1px;
   border-radius: 0;
   border-color: #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 
 .form__button {
-  //
+  min-width: 256px;
 }

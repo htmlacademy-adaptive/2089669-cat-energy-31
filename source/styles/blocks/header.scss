@@ -1,18 +1,75 @@
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 56px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: space-between;
+  margin: 0 auto;
   background-color: #ffffff;
   padding: 20px 13px 21px 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 34px 25px 30px;
+    column-gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px;
+    column-gap: 13px;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../../images/hero_background-desktop@1x.jpg");
+      width: 720px;
+      height: 694px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
 }
 
-.header__logo {
+.header--catalog {
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.header__logo-image {
   text-decoration: none;
+  justify-self: start;
+}
+
+.header__logo-text {
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .header__navigation {
-  //
+  grid-column: 1 / -1;
+  place-self: center;
+}
+
+.header__button-toggle {
+  border-style: none;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/stack.svg#icon_menu");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

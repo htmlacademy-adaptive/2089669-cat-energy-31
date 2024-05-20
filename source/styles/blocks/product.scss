@@ -16,16 +16,34 @@
   background-size: 100% auto, cover;
   max-height: 302px;
   margin-bottom: 138px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    max-height: none;
+    margin-bottom: 0;
+    position: relative;
+  }
 }
 
 .product__title {
   padding: 27px 20px 25px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 120px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0;
+    text-align: left;
+    width: 500px;
+  }
 }
 
 .product__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: $second-font;
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
@@ -33,6 +51,13 @@
   color: #ffffff;
   margin: 0 auto;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: var(--secondary-text-color, #000000);
+    margin-left: 120px;
+    font-size: 20px;
+    text-align: left;
+  }
 }
 
 .product__image {
@@ -42,4 +67,10 @@
 
 .product__button {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 410px;
+    left: 120px;
+  }
 }

@@ -21,6 +21,12 @@
   position: relative;
 }
 
+@media (min-width: $tablet-width) {
+  .developer-logo__image {
+    margin-left: 23px;
+  }
+}
+
 .developer-logo__image::before {
   content: "";
   width: 25px;
