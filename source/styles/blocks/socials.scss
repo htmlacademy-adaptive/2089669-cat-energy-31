@@ -15,19 +15,31 @@
 }
 
 .socials__link {
-  //
-}
-
-.socials__link::before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  mask-image: var(--icon);
-  mask-position: center;
-  mask-repeat: no-repeat;
-  background-color: var(--accent-dark, #666666);
+  display: flex;
   width: 28px;
   height: 22px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    mask-image: var(--icon);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: var(--accent-dark, #666666);
+    width: 28px;
+    height: 22px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: var(--accent-color, #68b738);
+  }
+
+  &:active::before {
+    background-color: var(--accent-color, #68b738);
+    opacity: 0.3;
+  }
 }
 
 .socials__link--vkontakte {

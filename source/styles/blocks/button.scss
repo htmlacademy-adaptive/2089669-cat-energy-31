@@ -9,12 +9,43 @@
   border-style: none;
   padding: 10px 20px;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-hover, #5eaa2f);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--accent-hover, #5eaa2f);
+    color: rgb(255 255 255 / 0.3);
+  }
+
+  &:disabled {
+    background-color: #cdcdcd;
+    color: rgb(0 0 0 / 0.3);
+    cursor: default;
+  }
 }
 
 .button--secondary {
   background-color: #f2f2f2;
   color: var(--primary-text-color, #444444);
   padding: 10px 20px;
-  height: 40px;
   width: 100%;
+
+  &:hover {
+    background-color: var(--basic-hover, #ebebeb);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--basic-hover, #ebebeb);
+    color: rgb(0 0 0 / 0.3);
+  }
+
+  &:disabled {
+    background-color: #cdcdcd;
+    color: rgb(0 0 0 / 0.3);
+    cursor: default;
+  }
 }

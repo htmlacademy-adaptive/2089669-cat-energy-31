@@ -1,40 +1,136 @@
 .slider {
-  //
+  aspect-ratio: 280 / 256;
+  grid-template-columns: 50% 1px 50%;
+  grid-template-rows: 1fr;
+  width: min(100%, 280px);
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    aspect-ratio: 280 / 256;
+    grid-template-columns: 50% 1px 50%;
+    grid-template-rows: 1fr;
+    width: min(100%, 560px);
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    aspect-ratio: 280 / 256;
+    grid-template-columns: 50% 1px 50%;
+    grid-template-rows: 1fr;
+    width: min(100%, 560px);
+    display: grid;
+  }
 }
 
 .slider__container {
-  position: relative;
+  @media (min-width: $desktop-width) {
+    display: grid;
+  }
 }
 
-.slider__button {
-  position: absolute;
-  padding: 0;
-  width: 4px;
-  height: 256px;
-  background-color: var(--accent-dark, #666666);
-  border-radius: 2px;
-  border-style: none;
-  left: 50%;
-  z-index: 1;
+.slider picture {
+  display: contents;
 }
 
-@media (min-width: $tablet-width) {
-  .slider__button {
+.slider__curtain {
+  grid-column: 2 / 3;
+  grid-row: 1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-hover, #5eaa2f);
+  }
+
+  &:active {
+    background-color: var(--accent-hover, #5eaa2f);
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
     height: 100%;
   }
 }
 
-.slider__button::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-image: url("../../icons/stack.svg#icon_slider");
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: translate(-50%, -50%);
-  left: 50%;
+.slider__button {
+  padding: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--accent-dark, #666666);
+  border-radius: 2px;
+  border-style: none;
+  z-index: 1;
+  cursor: col-resize;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 3px solid var(--accent-dark, #666666);
+    background-color: var(--accent-light, #ffffff);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    cursor: col-resize;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 15px;
+    mask-image: url("../../icons/stack.svg#icon_arrows-slider");
+    background-color: var(--accent-dark, #666666);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color, #68b738);
+  }
+
+  &:active {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 3px solid var(--accent-color, #68b738);
+  }
+
+  &:active::before {
+    border: 3px solid var(--accent-hover, #5eaa2f);
+    opacity: 0.6;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: var(--accent-color, #68b738);
+  }
+
+  &:active::after {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
 }
 
 .slider__cat {
@@ -42,10 +138,52 @@
 }
 
 .slider__cat--fat {
-  //
+  grid-column: 1/2;
+  grid-row: 1;
+  object-fit: cover;
+  height: 100%;
+  object-position: left;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1;
+    object-fit: cover;
+    height: 100%;
+    object-position: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1;
+    object-fit: cover;
+    height: 100%;
+    object-position: left;
+  }
 }
 
 .slider__cat--slim {
-  position: absolute;
-  left: 0;
+  grid-column: 3/-1;
+  grid-row: 1;
+  object-fit: cover;
+  left: initial;
+  object-position: right;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/-1;
+    grid-row: 1;
+    object-fit: cover;
+    left: initial;
+    object-position: right;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/-1;
+    grid-row: 1;
+    object-fit: cover;
+    left: initial;
+    object-position: right;
+    height: 100%;
+  }
 }

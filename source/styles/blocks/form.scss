@@ -20,7 +20,7 @@
   color: var(--primary-text-color, inherit);
   margin-bottom: 16px;
   width: 100%;
-  padding: 13px;
+  padding: 12px;
   border-style: solid;
   border-width: 1px;
   border-radius: 0;
@@ -34,4 +34,6 @@
 
 .form__button {
   min-width: 256px;
+  min-height: 56px;
+  font-size: 20px;
 }

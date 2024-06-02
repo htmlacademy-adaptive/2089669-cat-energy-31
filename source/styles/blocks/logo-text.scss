@@ -1,7 +1,18 @@
 .logo-text {
+  width: 101px;
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
 }
 
-.logo-text__image {
+.logo-text--footer {
   display: block;
+  width: 128px;
+  height: 24px;
 }
