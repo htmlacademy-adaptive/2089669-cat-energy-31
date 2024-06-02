@@ -10,6 +10,8 @@
   <link rel="apple-touch-icon" href="favicons/apple_icon_180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -52,9 +54,12 @@
             <p class="product__slogan">Занялся собой? Займись котом!</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)" srcset="images/product_image-desktop@1x.webp 1x, images/product_image-desktop@2x.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/product_image-tablet@1x.webp 1x, images/product_image-tablet@2x.webp 2x" width="709" height="609">
+            <source type="image/webp" srcset="images/product_image-mobile@1x.webp 1x, images/product_image-mobile@2x.webp 2x" width="280" height="270">
             <source media="(min-width: 1280px)" width="552" height="499" type="image/png" srcset="images/product_image-desktop@1x.png 1x, images/product_image-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/product_image-tablet@1x.png 1x, images/product_image-tablet@2x.png 2x">
-            <img class="product__image" src="images/product_image-mobile@1x.png" srcset="images/product_image-mobile@2x.png 2x" alt="Баночка корма Кэт Энерджи со вкусом курицы." width="280" height="270">
+            <img class="product__image" src="images/product_image-mobile@1x.png" srcset="images/product_image-mobile@2x.png 2x" alt="Баночка корма Кэт Энерджи со вкусом курицы." width="280" height="270" loading="lazy">
           </picture>
           <a class="product__button button" href="#">Подобрать программу</a>
         </div>
@@ -125,10 +130,11 @@
 
         <!-- Слайдер -->
         <div class="example__slider slider">
-          <!-- <div class="slider__container"> -->
           <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/cat_fat-tablet@1x.webp 1x, images/cat_fat-tablet@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="images/cat_fat-mobile@1x.webp 1x, images/cat_fat-mobile@2x.webp 2x" width="280" height="256">
             <source media="(min-width: 768px)" type="image/png" srcset="images/cat_fat-tablet@1x.png 1x, images/cat_fat-tablet@2x.png 2x" width="560" height="512">
-            <img class="slider__cat slider__cat--fat" src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" alt="Сравнение кота до и после программы: до — толстый котик." width="280" height="256">
+            <img class="slider__cat slider__cat--fat" src="images/cat_fat-mobile@1x.png" srcset="images/cat_fat-mobile@2x.png 2x" alt="Сравнение кота до и после программы: до — толстый котик." width="280" height="256" loading="lazy">
           </picture>
           <div class="slider__curtain">
             <button class="slider__button" type="button">
@@ -136,10 +142,11 @@
             </button>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/cat_slim-tablet@1x.webp 1x, images/cat_slim-tablet@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="images/cat_slim-mobile@1x.webp 1x, images/cat_slim-mobile@2x.webp 2x" width="280" height="256">
             <source media="(min-width: 768px)" type="image/png" srcset="images/cat_slim-tablet@1x.png 1x, images/cat_slim-tablet@2x.png 2x" width="560" height="512">
-            <img class="slider__cat slider__cat--slim" src="images/cat_slim-mobile@1x.png" srcset="images/cat_slim-mobile@2x.png 2x" alt="Сравнение кота до и после программы: после — стройный котик." width="280" height="256">
+            <img class="slider__cat slider__cat--slim" src="images/cat_slim-mobile@1x.png" srcset="images/cat_slim-mobile@2x.png 2x" alt="Сравнение кота до и после программы: после — стройный котик." width="280" height="256" loading="lazy">
           </picture>
-          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -155,11 +162,14 @@
           <p>Санкт-Петербург</p>
         </address>
       </div>
-      <iframe class="footer__address-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A66848ce0e5aceace666dfd85cb633a1aa9a64a6d6300bea1006ec971a5ddaec9&amp;source=constructor" width="320" height="362"></iframe>
+      <iframe class="footer__address-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A66848ce0e5aceace666dfd85cb633a1aa9a64a6d6300bea1006ec971a5ddaec9&amp;source=constructor" width="320" height="362" loading="lazy"></iframe>
       <picture>
+        <source type="image/webp" media="(min-width: 1280px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="400">
+        <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="400">
+        <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="320" height="362">
         <source media="(min-width: 1280px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" type="image/png" width="1440" height="400">
         <source media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png" width="768" height="400">
-        <img class="footer__map-picture" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта с адресом офиса." width="320" height="362">
+        <img class="footer__map-picture" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта с адресом офиса." width="320" height="362" loading="lazy">
       </picture>
     </section>
 

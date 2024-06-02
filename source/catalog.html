@@ -10,6 +10,8 @@
   <link rel="apple-touch-icon" href="favicons/apple_icon_180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -54,9 +56,13 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="images/catalog/card_chicken-desktop@1x.webp 1x, images/catalog/card_chicken-desktop@2x.webp 2x" width="169" height="210">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/card_chicken-tablet@1x.webp 1x, images/catalog/card_chicken-tablet@2x.webp 2x" width="200" height="210">
+                <source type="image/webp" srcset="images/catalog/card_chicken-mobile@1x.webp 1x, images/catalog/card_chicken-mobile@2x.webp 2x" width="140" height="107">
+
                 <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog/card_chicken-desktop@1x.png 1x, images/catalog/card_chicken-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog/card_chicken-tablet@1x.png 1x, images/catalog/card_chicken-tablet@2x.png 2x" width="200" height="210">
-                <img class="card__image" src="images/catalog/card_chicken-mobile@1x.png" srcset="images/catalog/card_chicken-mobile@2x.png 2x" alt="Cat Energy PRO 500 г" width="140" height="107">
+                <img class="card__image" src="images/catalog/card_chicken-mobile@1x.png" srcset="images/catalog/card_chicken-mobile@2x.png 2x" alt="Cat Energy PRO 500 г" width="140" height="107" loading="lazy">
               </picture>
             </a>
 
@@ -83,9 +89,13 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="images/catalog/card_chicken_big-desktop@1x.webp 1x, images/catalog/card_chicken_big-desktop@2x.webp 2x" width="169" height="210">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/card_chicken_big-tablet@1x.webp 1x, images/catalog/card_chicken_big-tablet@2x.webp 2x" width="200" height="210">
+                <source type="image/webp" srcset="images/catalog/card_chicken_big-mobile@1x.webp 1x, images/catalog/card_chicken_big-mobile@2x.webp 2x" width="140" height="107">
+
                 <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog/card_chicken_big-desktop@1x.png 1x, images/catalog/card_chicken_big-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog/card_chicken_big-tablet@1x.png 1x, images/catalog/card_chicken_big-tablet@2x.png 2x" width="200" height="210">
-                <img class="card__image" src="images/catalog/card_chicken_big-mobile@1x.png" srcset="images/catalog/card_chicken_big-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г" width="140" height="107">
+                <img class="card__image" src="images/catalog/card_chicken_big-mobile@1x.png" srcset="images/catalog/card_chicken_big-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <div class="card__content">
@@ -111,9 +121,13 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="images/catalog/card_fish-desktop@1x.webp 1x, images/catalog/card_fish-desktop@2x.webp 2x" width="169" height="210">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/card_fish-tablet@1x.webp 1x, images/catalog/card_fish-tablet@2x.webp 2x" width="200" height="210">
+                <source type="image/webp" srcset="images/catalog/card_fish-mobile@1x.webp 1x, images/catalog/card_fish-mobile@2x.webp 2x" width="140" height="107">
+
                 <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog/card_fish-desktop@1x.png 1x, images/catalog/card_fish-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog/card_fish-tablet@1x.png 1x, images/catalog/card_fish-tablet@2x.png 2x" width="200" height="210">
-                <img class="card__image" src="images/catalog/card_fish-mobile@1x.png" srcset="images/catalog/card_fish-mobile@2x.png 2x" alt="Cat Energy PRO 500 г" width="140" height="107">
+                <img class="card__image" src="images/catalog/card_fish-mobile@1x.png" srcset="images/catalog/card_fish-mobile@2x.png 2x" alt="Cat Energy PRO 500 г" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <div class="card__content">
@@ -139,9 +153,13 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="images/catalog/card_fish_big-desktop@1x.webp 1x, images/catalog/card_fish_big-desktop@2x.webp 2x" width="169" height="210">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/card_fish_big-tablet@1x.webp 1x, images/catalog/card_fish_big-tablet@2x.webp 2x" width="200" height="210">
+                <source type="image/webp" srcset="images/catalog/card_fish_big-mobile@1x.webp 1x, images/catalog/card_fish_big-mobile@2x.webp 2x" width="140" height="107">
+
                 <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog/card_fish_big-desktop@1x.png 1x, images/catalog/card_fish_big-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog/card_fish_big-tablet@1x.png 1x, images/catalog/card_fish_big-tablet@2x.png 2x" width="200" height="210">
-                <img class="card__image" src="images/catalog/card_fish_big-mobile@1x.png" srcset="images/catalog/card_fish_big-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г" width="140" height="107">
+                <img class="card__image" src="images/catalog/card_fish_big-mobile@1x.png" srcset="images/catalog/card_fish_big-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <div class="card__content">
@@ -167,9 +185,13 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="images/catalog/card_buckwheat-desktop@1x.webp 1x, images/catalog/card_buckwheat-desktop@2x.webp 2x" width="169" height="210">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/card_buckwheat-tablet@1x.webp 1x, images/catalog/card_buckwheat-tablet@2x.webp 2x" width="200" height="210">
+                <source type="image/webp" srcset="images/catalog/card_buckwheat-mobile@1x.webp 1x, images/catalog/card_buckwheat-mobile@2x.webp 2x" width="140" height="107">
+
                 <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog/card_buckwheat-desktop@1x.png 1x, images/catalog/card_buckwheat-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog/card_buckwheat-tablet@1x.png 1x, images/catalog/card_buckwheat-tablet@2x.png 2x" width="200" height="210">
-                <img class="card__image" src="images/catalog/card_buckwheat-mobile@1x.png" srcset="images/catalog/card_buckwheat-mobile@2x.png 2x" alt="Cat Energy Slim 500 г" width="140" height="107">
+                <img class="card__image" src="images/catalog/card_buckwheat-mobile@1x.png" srcset="images/catalog/card_buckwheat-mobile@2x.png 2x" alt="Cat Energy Slim 500 г" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <div class="card__content">
@@ -195,9 +217,13 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="images/catalog/card_buckwheat_big-desktop@1x.webp 1x, images/catalog/card_buckwheat_big-desktop@2x.webp 2x" width="169" height="210">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/card_buckwheat_big-tablet@1x.webp 1x, images/catalog/card_buckwheat_big-tablet@2x.webp 2x" width="200" height="210">
+                <source type="image/webp" srcset="images/catalog/card_buckwheat_big-mobile@1x.webp 1x, images/catalog/card_buckwheat_big-mobile@2x.webp 2x" width="140" height="107">
+
                 <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog/card_buckwheat_big-desktop@1x.png 1x, images/catalog/card_buckwheat_big-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog/card_buckwheat_big-tablet@1x.png 1x, images/catalog/card_buckwheat_big-tablet@2x.png 2x" width="200" height="210">
-                <img class="card__image" src="images/catalog/card_buckwheat_big-mobile@1x.png" srcset="images/catalog/card_buckwheat_big-mobile@2x.png 2x" alt="Cat Energy Slim 1000 г" width="140" height="107">
+                <img class="card__image" src="images/catalog/card_buckwheat_big-mobile@1x.png" srcset="images/catalog/card_buckwheat_big-mobile@2x.png 2x" alt="Cat Energy Slim 1000 г" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <div class="card__content">
@@ -223,9 +249,13 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="images/catalog/card_rice-desktop@1x.webp 1x, images/catalog/card_rice-desktop@2x.webp 2x" width="169" height="210">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/card_rice-tablet@1x.webp 1x, images/catalog/card_rice-tablet@2x.webp 2x" width="200" height="210">
+                <source type="image/webp" srcset="images/catalog/card_rice-mobile@1x.webp 1x, images/catalog/card_rice-mobile@2x.webp 2x" width="140" height="107">
+
                 <source type="image/png" media="(min-width: 1280px)" srcset="images/catalog/card_rice-desktop@1x.png 1x, images/catalog/card_rice-desktop@2x.png 2x" width="169" height="210">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/catalog/card_rice-tablet@1x.png 1x, images/catalog/card_rice-tablet@2x.png 2x" width="200" height="210">
-                <img class="card__image" src="images/catalog/card_rice-mobile@1x.png" srcset="images/catalog/card_rice-mobile@2x.png 2x" alt="Cat Energy Slim 500 г" width="140" height="107">
+                <img class="card__image" src="images/catalog/card_rice-mobile@1x.png" srcset="images/catalog/card_rice-mobile@2x.png 2x" alt="Cat Energy Slim 500 г" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <div class="card__content">
@@ -342,11 +372,14 @@
           <p>Санкт-Петербург</p>
         </address>
       </div>
-      <iframe class="footer__address-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A66848ce0e5aceace666dfd85cb633a1aa9a64a6d6300bea1006ec971a5ddaec9&amp;source=constructor" width="320" height="362"></iframe>
+      <iframe class="footer__address-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A66848ce0e5aceace666dfd85cb633a1aa9a64a6d6300bea1006ec971a5ddaec9&amp;source=constructor" width="320" height="362" loading="lazy"></iframe>
       <picture>
+        <source type="image/webp" media="(min-width: 1280px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="400">
+        <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="400">
+        <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="320" height="362">
         <source media="(min-width: 1280px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" type="image/png" width="1440" height="400">
         <source media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png" width="768" height="400">
-        <img class="footer__map-picture" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта с адресом офиса." width="320" height="362">
+        <img class="footer__map-picture" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта с адресом офиса." width="320" height="362" loading="lazy">
       </picture>
     </section>
 

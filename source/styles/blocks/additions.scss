@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 32px; //title-small сделать переменную//
+    font-size: 32px;
     margin: 0 0 80px 40px;
 
     &::before {
@@ -44,7 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 40px; //title-small сделать переменную//
+    font-size: 40px;
     line-height: 1;
     grid-column: 1/-1;
     margin: 0 0 78px;
