@@ -44,7 +44,7 @@
 }
 
 .footer__address-map {
-  width: 100vw;
+  width: 100%;
   border: none;
   display: block;
 
@@ -142,15 +142,12 @@
 }
 
 .footer__developer {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: space-between;
-
   @media (min-width: $tablet-width) {
     justify-self: end;
     width: 165px;
     height: 35px;
-    display: inline-flex;
+    display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
 }

@@ -8,45 +8,36 @@
   line-height: 1.25;
   text-decoration: none;
   text-align: left;
-  position: relative;
   margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  &:active,
-  &:focus {
+  @media (min-width: $tablet-width) {
+    column-gap: 23px;
+  }
+
+  &:active {
     opacity: 0.3;
   }
-}
 
-.developer-logo__image {
-  width: 27px;
-  height: 34px;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  position: relative;
-
-  &::before {
+  &::after {
     content: "";
+    display: block;
     width: 25px;
     height: 32px;
     mask-image: url("../../icons/stack.svg#icon_html-academy");
     background-color: var(--accent-dark, #666666);
     mask-position: center;
     mask-repeat: no-repeat;
-    position: absolute;
   }
 
-  &:hover::before,
-  &:focus::before {
+  &:hover::after,
+  &:focus::after {
     background-color: var(--accent-color, #68b738);
   }
 
-  &:active::before {
+  &:active::after {
     background-color: var(--accent-color, #68b738);
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-left: 23px;
   }
 }
