@@ -1,0 +1,43 @@
+.developer-logo {
+  text-decoration: none;
+  color: var(--primary-text-color, #444444);
+}
+
+.developer-logo__text {
+  font-size: 16px;
+  line-height: 1.25;
+  text-decoration: none;
+  text-align: left;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 23px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 32px;
+    mask-image: url("../../icons/stack.svg#icon_html-academy");
+    background-color: var(--accent-dark, #666666);
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: var(--accent-color, #68b738);
+  }
+
+  &:active::after {
+    background-color: var(--accent-color, #68b738);
+  }
+}
